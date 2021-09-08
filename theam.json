@@ -1,0 +1,545 @@
+{
+  "Version": 2,
+  "Load": {
+    "Base": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/880965361640570932/Loader.jpg",
+        "Online": true
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 51,
+        "G": 51,
+        "B": 51
+      },
+      "TopMost": true,
+      "Opacity": 1.0
+    },
+    "BaseStrings": {
+      "CheckingWhitelist": "Checking whitelist...",
+      "ChangingWhitelist": "Changing whitelist...",
+      "DownloadingData": "Downloading data...",
+      "CheckingData": "Checking data...",
+      "DownloadingDlls": "Downloading DLLs...",
+      "DownloadingMonaco": "Downloading Monaco...",
+      "DownloadingCefSharp": "Downloading CefSharp...",
+      "DownloadingSQLite": "Downloading SQLite...",
+      "JoiningDiscord": "Joining Discord...",
+      "Ready": "Ready!"
+    },
+    "Logo": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/881318321121787994/kuantan-pahang-april-14-2020-260nw-1704006103-removebg-preview.png",
+        "Online": false
+      }
+    },
+    "TopBox": {
+      "Enabled": true,
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      }
+    },
+    "TitleBox": {
+      "Enabled": true,
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "Text": "Anonymous - loader",
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "StatusBox": {
+      "Enabled": true,
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "Text": "Initializing...",
+      "BackColor": {
+        "A": 0,
+        "R": 51,
+        "G": 51,
+        "B": 51
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    }
+  },
+  "Main": {
+    "Base": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/880965363226005534/Main.jpg",
+        "Online": true
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 51,
+        "G": 51,
+        "B": 51
+      },
+      "TopMost": true,
+      "Opacity": 1.0
+    },
+    "WebSocket": {
+      "Enabled": false,
+      "DebugMode": false
+    },
+    "Editor": {
+      "Light": false,
+      "FixPixel": {
+        "A": 255,
+        "R": 30,
+        "G": 30,
+        "B": 30
+      }
+    },
+    "BaseStrings": {
+      "Checking": " (hacking...)",
+      "Injecting": " (Still Hacking...)",
+      "CheckingWhitelist": " (Hacking whitelist...)",
+      "Scanning": " (scanning...)",
+      "Ready": " (Hacked!)",
+      "FailedToFindRoblox": " (failed to find roblox!)",
+      "NotRunningLatestVersion": " (not running latest version! relaunch.)",
+      "NotInjected": " (not injected! press hack)",
+      "AlreadyInjected": " (already Hacked!)"
+    },
+    "RightClickStrings": {
+      "Execute": "Execute",
+      "LoadToEditor": "Load to Editor",
+      "Refresh": "Refresh"
+    },
+    "Logo": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/881318321121787994/kuantan-pahang-april-14-2020-260nw-1704006103-removebg-preview.png",
+        "Online": false
+      }
+    },
+    "TopBox": {
+      "Enabled": true,
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      }
+    },
+    "TitleBox": {
+      "Enabled": true,
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "FormatString": "Anonymous Executor",
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "ScriptBox": {
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "MinimizeButton": {
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "GlyphColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "ExitButton": {
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "GlyphColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "ExecuteButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Execute"
+    },
+    "ClearButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Clear Hack"
+    },
+    "OpenFileButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Open Hack"
+    },
+    "ExecuteFileButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Execute Hack"
+    },
+    "SaveFileButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Save Hack"
+    },
+    "OptionsButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Options"
+    },
+    "AttachButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Hack"
+    },
+    "ScriptHubButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 14.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "TextNormal": "Script Hub",
+      "TextYield": "Starting..."
+    }
+  },
+  "ScriptHub": {
+    "Base": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/881327164132327474/Script_Hub.jpg",
+        "Online": true
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 51,
+        "G": 51,
+        "B": 51
+      },
+      "TopMost": true,
+      "Opacity": 1.0
+    },
+    "Logo": {
+      "Image": {
+        "Path": "https://cdn.discordapp.com/attachments/864290372029120515/881318321121787994/kuantan-pahang-april-14-2020-260nw-1704006103-removebg-preview.png",
+        "Online": false
+      }
+    },
+    "TopBox": {
+      "Enabled": true,
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      }
+    },
+    "TitleBox": {
+      "Enabled": true,
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "Text": "Anonymous Script Hub",
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "ScriptBox": {
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 30,
+        "G": 30,
+        "B": 30
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "DescriptionBox": {
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 30,
+        "G": 30,
+        "B": 30
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "MinimizeButton": {
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "GlyphColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
+    },
+    "ExecuteButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "TextNormal": "Execute",
+      "TextYield": "Executing..."
+    },
+    "CloseButton": {
+      "Image": {
+        "Path": "",
+        "Online": false
+      },
+      "Font": {
+        "Name": "Segoe UI",
+        "Size": 12.0
+      },
+      "BackColor": {
+        "A": 0,
+        "R": 60,
+        "G": 60,
+        "B": 60
+      },
+      "TextColor": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      },
+      "Text": "Close"
+    }
+  }
+}
