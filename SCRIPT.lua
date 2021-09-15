@@ -13,11 +13,10 @@ Section:NewButton("patsa12", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "patsa12"
 local pos = p1.CFrame
-local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(inf)
+wait(77777777777777777777777777777777777777777777777777777777777777777777777777)
 
 p1.CFrame = pos
 end)
@@ -26,11 +25,10 @@ Section:NewButton("ndiver557", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "ndiver557"
 local pos = p1.CFrame
-local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(inf)
+wait(9999999999999999999999999999999999999999999999999999999999999999999999999999999)
 
 p1.CFrame = pos
 end)
@@ -39,11 +37,10 @@ Section:NewButton("wdg195", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "wdg195"
 local pos = p1.CFrame
-local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(inf)
+wait(999999999999999999999999999999999999999999999999999999999999999999999999999)
 
 p1.CFrame = pos
 end)
@@ -128,3 +125,4 @@ game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
 end)
+local Section = Tab:NewSection("tp team")
