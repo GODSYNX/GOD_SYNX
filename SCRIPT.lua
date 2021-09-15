@@ -13,10 +13,11 @@ Section:NewButton("patsa12", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "patsa12"
 local pos = p1.CFrame
+local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(100000000000000000000000000000000000000000000)
+wait(inf)
 
 p1.CFrame = pos
 end)
@@ -25,10 +26,11 @@ Section:NewButton("ndiver557", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "ndiver557"
 local pos = p1.CFrame
+local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(10000000000000000000000000000000000000000000000000000000000000000000000)
+wait(inf)
 
 p1.CFrame = pos
 end)
@@ -37,10 +39,11 @@ Section:NewButton("wdg195", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "wdg195"
 local pos = p1.CFrame
+local inf = math.huge
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-wait(100000000000000000000000000000000000000000000000000000000000000000)
+wait(inf)
 
 p1.CFrame = pos
 end)
