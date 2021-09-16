@@ -7,9 +7,9 @@ Duration = 2;
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 --menu 1
 local Window = Library.CreateLib("NoobHub", "Sentinel")
-local Tab = Window:NewTab("Script Hub")
-local Section = Tab:NewSection("Tp Menu")
-Section:NewButton("patsa12", "Cr.patsa123456", function()
+local Tab = Window:NewTab("TP TO PLAYER")
+local TP = Tab:NewSection("Tp Menu")
+TP:NewButton("patsa12", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "patsa12"
 local pos = p1.CFrame
@@ -21,7 +21,7 @@ wait(77777777777777777777777777777777777777777777777777777777777777777777777777)
 p1.CFrame = pos
 end)
 --ndiver557
-Section:NewButton("ndiver557", "Cr.patsa123456", function()
+TP:NewButton("ndiver557", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "ndiver557"
 local pos = p1.CFrame
@@ -33,7 +33,7 @@ wait(999999999999999999999999999999999999999999999999999999999999999999999999999
 p1.CFrame = pos
 end)
 --wdg195
-Section:NewButton("wdg195", "Cr.patsa123456", function()
+TP:NewButton("wdg195", "Cr.patsa123456", function()
 local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 local p2 = "wdg195"
 local pos = p1.CFrame
