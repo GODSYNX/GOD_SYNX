@@ -5,9 +5,8 @@ Text = "";
 Duration = 2;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("NoobHub Build a boat Hack", "sentinel")
---BABFT HACK
-local Tab = Window:NewTab("Build a boat Hack")
+local Window = Library.CreateLib("Noob hub build a boat Hack", "Sentinel")
+local Tab = Window:NewTab("build a boat")
 local BABFT = Tab:NewSection("Build a boat Hack")
 BABFT:NewButton("Tp Farm", "OneTime", function()
 local waittime = 2
@@ -110,6 +109,24 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.2847
 end)
 BABFT:NewButton("yellow", "", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-314.146423, -9.90199089, 645.362488, 0.0125740599, -3.61553347e-08, -0.999920964, -7.422301e-09, 1, -3.6251528e-08, 0.999920964, 7.87754306e-09, 0.0125740599)
+end)
+--Admin
+local Tab = Window:NewTab("Admin")
+local Admin = Tab:NewSection("Admin Hub")
+Admin:NewButton("ShatterVast Admin", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iL4NRDux"))()
+end)
+Admin:NewButton("Infinite Yield", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/05i9QcJa"))()
+end)
+Admin:NewButton("CMD X", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6wLsMGQN"))()
+end)
+Admin:NewButton("Fates Admin", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jE5xCC7w"))()
+end)
+Admin:NewButton("Reviz Admin", "", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/fAkyWMeT"))()
 end)
 --Credit
 local Tab = Window:NewTab("Credit")
