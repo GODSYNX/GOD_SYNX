@@ -5,8 +5,7 @@ Text = "";
 Duration = 2;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
---menu 1
-local Window = Library.CreateLib("NoobHub", "Sentinel")
+local Window = Library.CreateLib("NoobHub                    Build a boat Hack", "Sentinel")
 --BABFT HACK
 local Tab = Window:NewTab("Build a boat Hack")
 local BABFT = Tab:NewSection("Build a boat Hack")
@@ -112,6 +111,8 @@ end)
 BABFT:NewButton("yellow", "", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-314.146423, -9.90199089, 645.362488, 0.0125740599, -3.61553347e-08, -0.999920964, -7.422301e-09, 1, -3.6251528e-08, 0.999920964, 7.87754306e-09, 0.0125740599)
 end)
---Cerdit
-local Tab = Window:NewTab("Cerdit")
+--Credit
+local Tab = Window:NewTab("Credit")
 local BABFT = Tab:NewSection("patsa123456")
+--admin
+local Tab = Window:NewTab("Admin Hub")
