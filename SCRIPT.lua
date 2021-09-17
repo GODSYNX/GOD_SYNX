@@ -5,7 +5,7 @@ Text = "";
 Duration = 2;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("NoobHub                    Build a boat Hack", "Sentinel")
+local Window = Library.CreateLib("NoobHub                                 Build a boat Hack", "sentinel")
 --BABFT HACK
 local Tab = Window:NewTab("Build a boat Hack")
 local BABFT = Tab:NewSection("Build a boat Hack")
