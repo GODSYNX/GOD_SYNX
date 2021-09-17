@@ -113,6 +113,4 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-314.146
 end)
 --Credit
 local Tab = Window:NewTab("Credit")
-local BABFT = Tab:NewSection("patsa123456")
---admin
-local Tab = Window:NewTab("Admin Hub")
+local Cerdit = Tab:NewSection("patsa123456")
