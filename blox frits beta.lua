@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local CoolNewGui = Instance.new("ScreenGui")
 local HackFrame = Instance.new("Frame")
@@ -566,7 +562,7 @@ TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Position = UDim2.new(0.0179641712, 0, 0.744826615, 0)
 TextLabel_3.Size = UDim2.new(0.970343173, 0, 0.136029541, 0)
-TextLabel_3.Text = "Join discord for new Update!"
+TextLabel_3.Text = ""
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
@@ -582,7 +578,7 @@ TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0.00627161749, 0, 0.900519073, 0)
 TextLabel_4.Size = UDim2.new(2.29951262, 0, 0.11616385, 0)
-TextLabel_4.Text = "https://discord.gg/G7qp7TGVSq"
+TextLabel_4.Text = ""
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
