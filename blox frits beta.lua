@@ -1,4 +1,9 @@
-
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Blox fruits Hack Mobile";
+Text = "Cr.patsa123456";
+Duration = 2;
+})
 local CoolNewGui = Instance.new("ScreenGui")
 local HackFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
