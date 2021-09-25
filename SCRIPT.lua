@@ -9,6 +9,14 @@ local Window = Library.CreateLib("God Hub build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("build a boat")
 local BABFT = Tab:NewSection("Build a boat Hack")
 BABFT:NewButton("Tp Farm", "OneTime", function()
+--noclip
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+--one time
 local waittime = 2
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
 wait(waittime)
@@ -35,6 +43,13 @@ wait(waittime)
 wait(20)
 end)
 BABFT:NewButton("Tp Farm", "Loop", function()
+--noclip
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 --Loop
 for i=1, math.huge do
 local waittime = 2
@@ -63,25 +78,11 @@ wait(waittime)
 wait(20)
 end
 end)
---noclip
-BABFT:NewButton("Noclip", "press e", function()
-game.StarterGui:SetCore("SendNotification", {
-Title = "Noclib";
-Text = "press e";
-Duration = 2;
-})
+--Fix noclip
+BABFT:NewButton("Fix Noclip", "", function()
 noclip = false
 game:GetService('RunService').Stepped:connect(function()
 if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end
-end)
-plr = game.Players.LocalPlayer
-mouse = plr:GetMouse()
-mouse.KeyDown:connect(function(key)
-
-if key == "e" then
-noclip = not noclip
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
