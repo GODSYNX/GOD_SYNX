@@ -31,6 +31,13 @@ farmloop.Text = "farm loop"
 farmloop.TextColor3 = Color3.fromRGB(166, 0, 0)
 farmloop.TextSize = 28.000
 farmloop.MouseButton1Down:connect(function()
+--noclip
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)		
 for i=1, math.huge do
 local waittime = 2
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
@@ -69,6 +76,13 @@ farmonetime.Text = "farm onetime"
 farmonetime.TextColor3 = Color3.fromRGB(0, 25, 170)
 farmonetime.TextSize = 25.000
 farmonetime.MouseButton1Down:connect(function()
+--noclip
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)		
 	local waittime = 2
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
 	wait(waittime)
@@ -94,35 +108,21 @@ farmonetime.MouseButton1Down:connect(function()
 	wait(waittime)
 	wait(20)
 end)
-
 noclip.Name = "noclip"
 noclip.Parent = Frame
 noclip.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
 noclip.Position = UDim2.new(0, 0, 0.689655185, 0)
 noclip.Size = UDim2.new(0, 163, 0, 54)
 noclip.Font = Enum.Font.SourceSans
-noclip.Text = "noclip"
+noclip.Text = "Fix noclip"
 noclip.TextColor3 = Color3.fromRGB(0, 243, 255)
 noclip.TextSize = 30.000
 noclip.MouseButton1Down:connect(function()
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Noclib";
-		Text = "press e";
-		Duration = 2;
-	})
-	noclip = false
-	game:GetService('RunService').Stepped:connect(function()
-		if noclip then
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
-
-		if key == "e" then
-			noclip = not noclip
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
+--noclip
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 end)
