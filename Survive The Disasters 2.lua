@@ -7,8 +7,15 @@ Duration = 2;
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Survive The Disasters 2", "Sentinel")
 local Tab = Window:NewTab("Survive The Disasters 2")
-local STD = Tab:NewSection("Survive The Disasters 2Hack")
+local STD = Tab:NewSection("Survive The Disasters 2 Hack")
 STD:NewButton("Tp Farm", "Loop", function()
+--noclip
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 --Loop
 for i=1, math.huge do
 local waittime = 2
