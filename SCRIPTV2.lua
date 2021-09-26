@@ -6,9 +6,9 @@ Duration = 2;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
-local Tab = Window:NewTab("build a boat")
-local BABFT = Tab:NewSection("Build a boat Hack")
-BABFT:NewButton("Tp Farm", "OneTime", function()
+local Tab = Window:NewTab("Build a boat")
+local BABFT = Tab:NewSection("Farm Gold")
+BABFT:NewButton("Tp Farm OneTime", "OneTime", function()
 --noclip
 noclip = true
 game:GetService('RunService').Stepped:connect(function()
@@ -42,7 +42,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044
 wait(waittime)
 wait(20)
 end)
-BABFT:NewButton("Tp Farm", "Loop", function()
+BABFT:NewButton("Tp Farm Loop", "Loop", function()
 --noclip
 noclip = true
 game:GetService('RunService').Stepped:connect(function()
