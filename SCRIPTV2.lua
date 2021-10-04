@@ -127,6 +127,22 @@ end)
 Admin:NewButton("Reviz Admin", "", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/fAkyWMeT"))()
 end)
+--players
+players = {}
+for i,v in pairs(game:GetService("Players"):Getchildren()) do
+    table.insert(players,v.Name)
+end
+local Tab = Window:NewTab("Teleport")
+local players = Tab:NewSection("Players")
+players:NewDropdown("Select Players", "", players, function(Tp)
+    Select = Tp
+end)
+players:NewButton("Refresh", "", function()
+    table.clear(players)
+end)
+players:NewButton("Teleport", "", function()
+    game.Players.LocalPlayer.Charater.HumanoidRootPart.CFrame = game.Players[Select].Charater.HumanoidRootPart.CFrame
+end)
 --Credit
 local Tab = Window:NewTab("Credit")
 local Cerdit = Tab:NewSection("patsa123456")
