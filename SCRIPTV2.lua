@@ -4,6 +4,11 @@ Title = "Cr.patsa123456";
 Text = "";
 Duration = 2;
 })
+--players
+players = {}
+for i,v in pairs(game:GetService("Players"):Getchildren()) do
+    table.insert(players,v.Name)
+end
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Build a boat")
@@ -127,11 +132,6 @@ end)
 Admin:NewButton("Reviz Admin", "", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/fAkyWMeT"))()
 end)
---players
-players = {}
-for i,v in pairs(game:GetService("Players"):Getchildren()) do
-    table.insert(players,v.Name)
-end
 local Tab = Window:NewTab("Teleport")
 local players = Tab:NewSection("Players")
 players:NewDropdown("Select Players", "", players, function(Tp)
