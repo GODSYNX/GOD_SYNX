@@ -147,7 +147,7 @@ end)
 ----------------------------------------
 
 xxx:NewButton("Teleport", "", function()
-    game.Players.LocalPlayer.Charater.HumanoidRootPart.CFrame = game.Players[Select].Charater.HumanoidRootPart.CFrame
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Select].Character.HumanoidRootPart.CFrame
 end)
 
 ----------------------------------------
