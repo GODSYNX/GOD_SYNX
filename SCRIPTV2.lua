@@ -155,7 +155,7 @@ end)
 xxx:NewButton("Refresh", "", function()
     table.clear(players)
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
-    table.insert(players,v.Name)    
+   table.insert(players,v.Name)
 end
 end)
 --Credit
