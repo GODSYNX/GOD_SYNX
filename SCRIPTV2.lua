@@ -4,11 +4,6 @@ Title = "Cr.patsa123456";
 Text = "";
 Duration = 2;
 })
---players
-players = {}
-for i,v in pairs(game:GetService("Players"):Getchildren()) do
-    table.insert(players,v.Name)
-end
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Build a boat")
@@ -132,16 +127,36 @@ end)
 Admin:NewButton("Reviz Admin", "", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/fAkyWMeT"))()
 end)
-local Tab = Window:NewTab("Teleport")
-local players = Tab:NewSection("Players")
-players:NewDropdown("Select Players", "", players, function(Tp)
+local Tab = Window:NewTab("Players")
+local xxx = Tab:NewSection("Teleport")
+
+----------------------------------------
+
+
+players = {}
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(players,v.Name)    
+end
+----------------------------------------
+
+xxx:NewDropdown("Select Players", "", players, function(Tp)
     Select = Tp
 end)
-players:NewButton("Refresh", "", function()
-    table.clear(players)
-end)
-players:NewButton("Teleport", "", function()
+
+----------------------------------------
+
+xxx:NewButton("Teleport", "", function()
     game.Players.LocalPlayer.Charater.HumanoidRootPart.CFrame = game.Players[Select].Charater.HumanoidRootPart.CFrame
+end)
+
+----------------------------------------
+
+xxx:NewButton("Refresh", "", function()
+    table.clear(players)
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(players,v.Name)    
+end
 end)
 --Credit
 local Tab = Window:NewTab("Credit")
