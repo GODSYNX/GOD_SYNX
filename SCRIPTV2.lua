@@ -6,7 +6,7 @@ Duration = 2;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
-local Tab = Window:NewTab("Build a boat")
+local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
 BABFT:NewButton("Tp Farm OneTime", "OneTime", function()
 --noclip
