@@ -84,14 +84,14 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044
 wait(waittime)
 wait(20)
 end
-end
-    else
+else
 game.StarterGui:SetCore("SendNotification", {
 Title = "Stop Farm";
 Text = "";
 Duration = 3;
 })
 _G.Farm = false
+end
 end)
 local BABFT = Tab:NewSection("Tp team")
 BABFT:NewButton("Black", "", function()
