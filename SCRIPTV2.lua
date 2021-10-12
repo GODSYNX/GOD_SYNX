@@ -42,7 +42,15 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044
 wait(waittime)
 wait(20)
 end)
-BABFT:NewButton("Tp Farm Loop", "Loop", function()
+BABFT:NewToggle("Tp Farm Loop", "", function(state)
+ if state then
+game.StarterGui:SetCore("SendNotification", {
+Title = "Start Farm";
+Text = "";
+Duration = 3;
+})
+_G.Farm = true
+while _G.Farm do
 --noclip
 noclip = true
 game:GetService('RunService').Stepped:connect(function()
@@ -51,7 +59,6 @@ game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
 --Loop
-for i=1, math.huge do
 local waittime = 2
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
 wait(waittime)
@@ -77,15 +84,14 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044
 wait(waittime)
 wait(20)
 end
-end)
---Fix noclip
-BABFT:NewButton("Fix Noclip", "", function()
-noclip = false
-game:GetService('RunService').Stepped:connect(function()
-if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
-end)
+    else
+game.StarterGui:SetCore("SendNotification", {
+Title = "Stop Farm";
+Text = "";
+Duration = 3;
+})
+_G.Farm = false
 end)
 local BABFT = Tab:NewSection("Tp team")
 BABFT:NewButton("Black", "", function()
