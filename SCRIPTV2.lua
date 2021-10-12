@@ -8,6 +8,15 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
+BABFT:NewButton("Fix Noclip", "", function()
+--noclip
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+end)
 BABFT:NewButton("Tp Farm OneTime", "OneTime", function()
 --noclip
 noclip = true
@@ -91,13 +100,6 @@ Text = "";
 Duration = 3;
 })
 _G.Farm = false
-end
-end)
-BABFT:NewButton("Fix Noclip", "", function()
-noclip = false
-game:GetService('RunService').Stepped:connect(function()
-if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)    
 local BABFT = Tab:NewSection("Tp team")
