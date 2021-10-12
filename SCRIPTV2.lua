@@ -8,15 +8,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
-BABFT:NewButton("Fix Noclip", "", function()
---noclip
-noclip = false
-game:GetService('RunService').Stepped:connect(function()
-if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end
-end)
-end)
 BABFT:NewButton("Tp Farm OneTime", "OneTime", function()
 --noclip
 noclip = true
@@ -49,6 +40,13 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.3128
 wait(waittime)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
 wait(waittime)
+--noclip
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 wait(20)
 end)
 BABFT:NewToggle("Tp Farm Loop", "", function(state)
@@ -58,8 +56,6 @@ Title = "Start Farm";
 Text = "";
 Duration = 3;
 })
-_G.Farm = true
-while _G.Farm do
 --noclip
 noclip = true
 game:GetService('RunService').Stepped:connect(function()
@@ -67,6 +63,8 @@ if noclip then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
+_G.Farm = true
+while _G.Farm do
 --Loop
 local waittime = 2
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
@@ -100,6 +98,13 @@ Text = "";
 Duration = 3;
 })
 _G.Farm = false
+--noclip
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 end
 end)    
 local BABFT = Tab:NewSection("Tp team")
