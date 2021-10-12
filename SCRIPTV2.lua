@@ -93,6 +93,13 @@ Duration = 3;
 _G.Farm = false
 end
 end)
+BABFT:NewButton("Fix Noclip", "", function()
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)    
 local BABFT = Tab:NewSection("Tp team")
 BABFT:NewButton("Black", "", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-336.34494, -9.90199184, -77.173317, 0.00310703064, -9.93006282e-08, -0.999995172, 3.54395802e-09, 1, -9.92900979e-08, 0.999995172, -3.23544347e-09, 0.00310703064)
