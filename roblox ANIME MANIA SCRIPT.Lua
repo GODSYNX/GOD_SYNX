@@ -1,7 +1,7 @@
 warn('Might be patched, disabling script.')
 repeat wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 if game.PlaceId == 6284881984 then -- if main lobby
-    warn('Map:', _G.Level)
+    warn('Map:', _G.Map)
     if _G.AutoMerge then
 	wait(5.5) -- game doesn't load your inventory until a bit, so gotta wait
 	for _,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelection.Inventory.Inventory:GetChildren()) do
@@ -15,7 +15,7 @@ end
 end
 end
 end
-    game:GetService("ReplicatedStorage").Remotes.CreateRoom:InvokeServer(_G.Level, _G.Password)
+    game:GetService("ReplicatedStorage").Remotes.CreateRoom:InvokeServer(_G.Map, _G.Password)
     game:GetService("ReplicatedStorage").Remotes.BeginRoom:FireServer()
 else
     local me = game.Players.LocalPlayer -- variable for easier usage later
