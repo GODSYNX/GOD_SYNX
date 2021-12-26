@@ -1,3 +1,9 @@
+local New_CFrame = CFrame.new(-76.3128815, 54.7921333, 8295.3916, -0.999999642, 1.30899847e-09, -2.23945826e-05, 1.31207345e-09, 1, -1.36576602e-07, 2.23945826e-05, -1.36576517e-07, -0.999999642)--ตำเเหน่ง
+local TS = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+local part = char.HumanoidRootPart
+local time = TweenInfo.new(21, Enum.EasingStyle.Linear) -- วิ
+local tp = {CFrame = New_CFrame}
 wait(1)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Cr.patsa123456";
@@ -10,18 +16,12 @@ local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
 BABFT:NewButton("Tween Farm OneTime", "OneTime", function()
 --one time
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-17.8286343, 82.2557068, -656.156616, -0.998027623, 9.36543003e-08, 0.0627758726, 9.52565244e-08, 1, 2.25299601e-08, -0.0627758726, 2.8465335e-08, -0.998027623)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8375854, 139.331726, -696.648743, -0.996666193, -5.03525088e-09, -0.0815873593, -5.19167331e-09, 1, 1.70509951e-09, 0.0815873593, 2.12299001e-09, -0.996666193)
 wait(1)
-  local New_CFrame = CFrame.new(-76.3128815, 54.7921333, 8295.3916, -0.999999642, 1.30899847e-09, -2.23945826e-05, 1.31207345e-09, 1, -1.36576602e-07, 2.23945826e-05, -1.36576517e-07, -0.999999642)--ตำเเหน่ง
-local TS = game:GetService('TweenService')
-local char = game.Players.LocalPlayer.Character
-local part = char.HumanoidRootPart
-local time = TweenInfo.new(21, Enum.EasingStyle.Linear) -- วิ
-local tp = {CFrame = New_CFrame}
 TS:Create(part, time, tp):Play()
   wait(23)
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
-  wait(10)
+
 end)
 ---------------------------------------------------
 BABFT:NewToggle("Tween Farm Loop", "", function(state)
@@ -34,18 +34,12 @@ Duration = 3;
 _G.Farm = true
 while _G.Farm do
 --Loop
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-17.8286343, 82.2557068, -656.156616, -0.998027623, 9.36543003e-08, 0.0627758726, 9.52565244e-08, 1, 2.25299601e-08, -0.0627758726, 2.8465335e-08, -0.998027623)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8375854, 139.331726, -696.648743, -0.996666193, -5.03525088e-09, -0.0815873593, -5.19167331e-09, 1, 1.70509951e-09, 0.0815873593, 2.12299001e-09, -0.996666193)
 wait(1)
-  local New_CFrame = CFrame.new(-76.3128815, 54.7921333, 8295.3916, -0.999999642, 1.30899847e-09, -2.23945826e-05, 1.31207345e-09, 1, -1.36576602e-07, 2.23945826e-05, -1.36576517e-07, -0.999999642)--ตำเเหน่ง
-local TS = game:GetService('TweenService')
-local char = game.Players.LocalPlayer.Character
-local part = char.HumanoidRootPart
-local time = TweenInfo.new(21, Enum.EasingStyle.Linear) -- วิ
-local tp = {CFrame = New_CFrame}
 TS:Create(part, time, tp):Play()
   wait(23)
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
-  wait(10)  
+  wait(15)  
 end
 else
 game.StarterGui:SetCore("SendNotification", {
