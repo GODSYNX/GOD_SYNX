@@ -14,7 +14,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
-BABFT:NewButton("Tween Farm OneTime", "OneTime", function()
+BABFT:NewButton("Tp Farm OneTime", "OneTime", function()
     --noclip
     spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
@@ -31,11 +31,30 @@ game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
 --one time
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8375854, 139.331726, -696.648743, -0.996666193, -5.03525088e-09, -0.0815873593, -5.19167331e-09, 1, 1.70509951e-09, 0.0815873593, 2.12299001e-09, -0.996666193)
-wait(1)
-TS:Create(part, time, tp):Play()
-  wait(23)
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
+local waittime = 2
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-53.8646736, 54.7921333, 2135.83691, -0.999980807, 2.17031482e-09, 0.00628393609, 1.31207345e-09, 1, -1.36576602e-07, -0.00628393609, -1.36565603e-07, -0.999980807)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.3710403, 54.7921333, 2905.50195, -0.999980986, 4.50923493e-10, -0.00630529039, 1.31207345e-09, 1, -1.36576602e-07, 0.00630529039, -1.36582273e-07, -0.999980986)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-69.8425522, 54.7921333, 3679.34131, -0.999970496, 2.40644699e-10, -0.00784481037, 1.31207345e-09, 1, -1.36576602e-07, 0.00784481037, -1.36582784e-07, -0.999970496)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-65.0485001, 54.7921333, 4447.39844, -0.999684751, -2.12410178e-09, -0.0251565129, 1.31207345e-09, 1, -1.36576602e-07, 0.0251565129, -1.36566513e-07, -0.999684751)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-71.7007523, 54.7921333, 5216.17676, -0.999772847, -1.60741076e-09, -0.0213741828, 1.31207345e-09, 1, -1.36576602e-07, 0.0213741828, -1.36573618e-07, -0.999772847)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-65.1917725, 54.7921333, 5984.92236, -0.999943554, 2.77545831e-09, 0.0107153719, 1.31207345e-09, 1, -1.36576602e-07, -0.0107153719, -1.36554789e-07, -0.999943554)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-63.3787956, 54.7921333, 6762.92627, -0.999820352, -1.27981348e-09, -0.0189757496, 1.31207345e-09, 1, -1.36576602e-07, 0.0189757496, -1.36576858e-07, -0.999820352)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-71.7578735, 54.7921333, 7524.47363, -0.999998212, 1.07228848e-09, -0.00175556378, 1.31207345e-09, 1, -1.36576602e-07, 0.00175556378, -1.36578578e-07, -0.999998212)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.3128815, 54.7921333, 8295.3916, -0.999999642, 1.30899847e-09, -2.23945826e-05, 1.31207345e-09, 1, -1.36576602e-07, 2.23945826e-05, -1.36576517e-07, -0.999999642)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
+		wait(waittime)
+		wait(20)
 --noclip
     spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
@@ -53,7 +72,7 @@ end
 end)
 end)
 ---------------------------------------------------
-BABFT:NewToggle("Tween Farm Loop", "", function(state)
+BABFT:NewToggle("Tp Farm Loop", "", function(state)
  if state then
 game.StarterGui:SetCore("SendNotification", {
 Title = "Start Farm";
@@ -75,23 +94,40 @@ if noclip then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
 end)
-_G.Farm = true
-while _G.Farm do
---Loop
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8375854, 139.331726, -696.648743, -0.996666193, -5.03525088e-09, -0.0815873593, -5.19167331e-09, 1, 1.70509951e-09, 0.0815873593, 2.12299001e-09, -0.996666193)
-wait(1)
-TS:Create(part, time, tp):Play()
-  wait(23)
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
-  wait(15)  
-end
+getgenv().Farm = true
+while getgenv().Farm do
+local waittime = 2
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.5911636, 54.7921333, 1370.4563, -0.999964356, 2.47187559e-09, 0.00849207584, 1.31207345e-09, 1, -1.36576602e-07, -0.00849207584, -1.36560487e-07, -0.999964356)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-53.8646736, 54.7921333, 2135.83691, -0.999980807, 2.17031482e-09, 0.00628393609, 1.31207345e-09, 1, -1.36576602e-07, -0.00628393609, -1.36565603e-07, -0.999980807)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.3710403, 54.7921333, 2905.50195, -0.999980986, 4.50923493e-10, -0.00630529039, 1.31207345e-09, 1, -1.36576602e-07, 0.00630529039, -1.36582273e-07, -0.999980986)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-69.8425522, 54.7921333, 3679.34131, -0.999970496, 2.40644699e-10, -0.00784481037, 1.31207345e-09, 1, -1.36576602e-07, 0.00784481037, -1.36582784e-07, -0.999970496)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-65.0485001, 54.7921333, 4447.39844, -0.999684751, -2.12410178e-09, -0.0251565129, 1.31207345e-09, 1, -1.36576602e-07, 0.0251565129, -1.36566513e-07, -0.999684751)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-71.7007523, 54.7921333, 5216.17676, -0.999772847, -1.60741076e-09, -0.0213741828, 1.31207345e-09, 1, -1.36576602e-07, 0.0213741828, -1.36573618e-07, -0.999772847)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-65.1917725, 54.7921333, 5984.92236, -0.999943554, 2.77545831e-09, 0.0107153719, 1.31207345e-09, 1, -1.36576602e-07, -0.0107153719, -1.36554789e-07, -0.999943554)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-63.3787956, 54.7921333, 6762.92627, -0.999820352, -1.27981348e-09, -0.0189757496, 1.31207345e-09, 1, -1.36576602e-07, 0.0189757496, -1.36576858e-07, -0.999820352)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-71.7578735, 54.7921333, 7524.47363, -0.999998212, 1.07228848e-09, -0.00175556378, 1.31207345e-09, 1, -1.36576602e-07, 0.00175556378, -1.36578578e-07, -0.999998212)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.3128815, 54.7921333, 8295.3916, -0.999999642, 1.30899847e-09, -2.23945826e-05, 1.31207345e-09, 1, -1.36576602e-07, 2.23945826e-05, -1.36576517e-07, -0.999999642)
+		wait(waittime)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
+		wait(waittime)
+		wait(20)
+	end
 else
 game.StarterGui:SetCore("SendNotification", {
 Title = "Stop Farm";
 Text = "";
 Duration = 3;
 })
-_G.Farm = false
+getgenv().Farm = false
       --noclip
     spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
