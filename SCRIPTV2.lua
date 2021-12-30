@@ -15,13 +15,42 @@ local Window = Library.CreateLib("God HubV2 build a boat Hack", "Sentinel")
 local Tab = Window:NewTab("Farm")
 local BABFT = Tab:NewSection("Farm Gold")
 BABFT:NewButton("Tween Farm OneTime", "OneTime", function()
+    --noclip
+    spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+        end
+    end)
+end)
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 --one time
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8375854, 139.331726, -696.648743, -0.996666193, -5.03525088e-09, -0.0815873593, -5.19167331e-09, 1, 1.70509951e-09, 0.0815873593, 2.12299001e-09, -0.996666193)
 wait(1)
 TS:Create(part, time, tp):Play()
   wait(23)
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.9044495, -359.506073, 9496.25586, -0.999835372, 4.94488894e-08, -0.0181456991, 4.9011863e-08, 1, 2.45287808e-08, 0.0181456991, 2.36353888e-08, -0.999835372)
-
+--noclip
+    spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+        end
+    end)
+end)
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 end)
 ---------------------------------------------------
 BABFT:NewToggle("Tween Farm Loop", "", function(state)
@@ -31,6 +60,21 @@ Title = "Start Farm";
 Text = "";
 Duration = 3;
 })
+      --noclip
+    spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+        end
+    end)
+end)
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 _G.Farm = true
 while _G.Farm do
 --Loop
@@ -48,6 +92,22 @@ Text = "";
 Duration = 3;
 })
 _G.Farm = false
+      --noclip
+    spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+        end
+    end)
+end)
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+      
 end
 end)    
 local BABFT = Tab:NewSection("Tp team")
