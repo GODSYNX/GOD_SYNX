@@ -36,9 +36,16 @@ else
     return old(name, ...)
     end)
 
-    game:GetService("RunService").RenderStepped:Connect(function()
-    me.Character.Humanoid:ChangeState(11)
+    spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+            game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
     end)
+end)
+	
     game.Players.LocalPlayer.DevCameraOcclusionMode = "Invisicam"
 
     
