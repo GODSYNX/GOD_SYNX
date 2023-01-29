@@ -1,4 +1,9 @@
-warn('Might be patched, disabling script.')
+game.StarterGui:SetCore("SendNotification", {
+Title = "Script By";
+Text = "ZAIA Enterprise";
+Icon = "http://www.roblox.com/asset/?id=12315994604";
+Duration = math.huge;
+})
 repeat wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 if game.PlaceId == 6284881984 then -- if main lobby
 warn("Check config")
