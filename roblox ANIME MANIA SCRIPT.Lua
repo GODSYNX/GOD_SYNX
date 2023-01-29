@@ -1,11 +1,12 @@
 warn('Might be patched, disabling script.')
 repeat wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 if game.PlaceId == 6284881984 then -- if main lobby
-print("Check config")
+warn("Check config")
 warn("Map:", _G.Map)
 warn("Password:", _G.Password)
 warn("Distance:", _G.Distance)
 warn("AttackType:", _G.AttackType)
+warn("Script By:", "ZAIA Enterprise")	
     if _G.AutoMerge then
 	wait(5.5) -- game doesn't load your inventory until a bit, so gotta wait
 	for _,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.CharacterSelection.Inventory.Inventory:GetChildren()) do
