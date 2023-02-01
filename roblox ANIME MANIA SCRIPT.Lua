@@ -1,7 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
-Title = "Script By";
-Text = "ZAIA Enterprise";
-Icon = "http://www.roblox.com/asset/?id=12315994604";
+Title = "Check config";
+Text = "Map".._G.Map.."\n Password:".._G.Password.."\n Distance:".._G.Distance.."\n AttackType:".._G.AttackType;
 Duration = math.huge;
 })
 repeat wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
