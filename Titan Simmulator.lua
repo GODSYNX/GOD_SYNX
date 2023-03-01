@@ -27,7 +27,7 @@ local respone = HttpRequest(
         ["content"] = "",
         ["embeds"] = {{
             ["title"] = "status",
-            ["description"] = "Players"..PlayerName.."\n Rebirths:"..Rebirths.."\n Power:"..Power.."\n Kill:"..Kill,
+            ["description"] = "Players"..PlayerName.."\n Rebirths:"..Rebirths.."\n Power:"..Power.."\n Kill:"..Kill.."@everyone",
             ["type"] = "rich",
             ["color"] = tonumber(0x0099E1),
         }}
