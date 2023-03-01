@@ -1,4 +1,42 @@
 if _G.Script_Mode == 1 then
+  --------------------------------------------- 
+   game:GetService("RunService").RenderStepped:Connect(function()
+    spawn(function()
+    pcall(function()
+HttpService = game:GetService("HttpService")
+
+local PlayerName = game.Players.LocalPlayer.Name
+local Rebirths = game.Players.LocalPlayer.leaderstats.Rebirths.Value
+local Power = game.Players.LocalPlayer.leaderstats.Power.Value
+local Kill = game.Players.LocalPlayer.leaderstats.Kills.Value
+
+if syn then
+   HttpRequest = syn.request
+   else
+   HttpRequest = http_request
+end
+
+local respone = HttpRequest( 
+{
+    Method = "POST",
+    Url = _G.Webhook_URL,
+    Headers = {
+        ["Content-Type"] = "application/json"
+    },
+    Body = HttpService:JSONEncode({
+        ["content"] = "",
+        ["embeds"] = {{
+            ["title"] = "status",
+            ["description"] = "Players"..PlayerName.."\n Rebirths:"..Rebirths.."\n Power:"..Power.."\n Kill:"..Kill,
+            ["type"] = "rich",
+            ["color"] = tonumber(0x0099E1),
+        }}
+    })
+})   
+end)
+end)
+end)
+----------------------------------------  
 spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
