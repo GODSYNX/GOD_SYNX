@@ -55,15 +55,15 @@ end)
 end)
 
 spawn(function()
-while true do wait()
+game:GetService("RunService").RenderStepped:Connect(function()
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Punch"))
 end)
-end
+end)
 end)
 
 spawn(function()
-while true do wait(.1)
+game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
 for i,v in pairs(game.Workspace:GetChildren()) do
 if v.Name == "Drop" then
@@ -71,7 +71,7 @@ v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
 end
 end)
-end
+end)
 end)
 elseif _G.Script_Mode == 2 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
