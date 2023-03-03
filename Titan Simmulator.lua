@@ -68,6 +68,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 for i,v in pairs(game.Workspace:GetChildren()) do
 if v.Name == "Drop" then
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+v.CanCollide = false
 end
 end
 end)
