@@ -1,6 +1,8 @@
 --_G.Script_Mode = 1
 --_G.SynapseX = true -- if you Use SynapseX warning if you don't use SynapseX kick30%
 --_G.Webhook_URL = ""
+repeat wait() until game:IsLoaded()
+repeat wait() local a, b = pcall(function()
 if _G.Script_Mode == 1 then
     --------------------------------------------- 
      game:GetService("RunService").RenderStepped:Connect(function()
@@ -189,3 +191,4 @@ end
   end
   end)
   end
+end) if not a then wait(30) end until a
