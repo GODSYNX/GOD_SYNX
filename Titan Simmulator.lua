@@ -66,7 +66,7 @@ if _G.Script_Mode == 1 then
   end)
   end)
   end)
-  if _G.SynapseX == true then
+  if _G.SynapseX then
   spawn(function()
   game:GetService("RunService").RenderStepped:Connect(function()
       pcall(function()
