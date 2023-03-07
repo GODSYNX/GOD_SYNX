@@ -1,7 +1,7 @@
---_G.Script_Mode = 1
---_G.SynapseX = true -- if you don't Use SynapseX warning if you don't use SynapseX kick30%
---_G.Webhook = false
---_G.Webhook_URL = ""
+--_G.Script_Mode = 1 --1 is Auto farm 2 is UI
+--_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick50%
+--_G.Webhook = false -- warning so fasttest ping to discord
+--_G.Webhook_URL = ""--Your WebHook
 repeat wait() until game:IsLoaded()
 repeat wait() local a, b = pcall(function()
 if _G.Script_Mode == 1 then
@@ -34,7 +34,7 @@ if _G.Script_Mode == 1 then
           ["content"] = "",
           ["embeds"] = {{
               ["title"] = "status",
-              ["description"] = "Players"..PlayerName.."\n Rebirths:"..Rebirths.."\n Power:"..Power.."\n Kill:"..Kill.."@everyone",
+              ["description"] = "Players:"..PlayerName.."\n Rebirths:"..Rebirths.."\n Power:"..Power.."\n Kill:"..Kill.."@everyone",
               ["type"] = "rich",
               ["color"] = tonumber(0x0099E1),
           }}
