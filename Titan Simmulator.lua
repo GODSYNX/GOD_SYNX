@@ -1,13 +1,84 @@
---_G.Script_Mode = 1 --1 is Auto farm 2 is UI
---_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick50%
---_G.Webhook = false -- warning so fasttest ping to discord
---_G.Webhook_URL = ""--Your WebHook
+--[[
+_G.Script_Mode = 1 --1 is Auto farm 2 is UI
+_G.HookFunction = false -- Anti Kick Work 100%
+_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick50%
+_G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
+_G.Webhook_URL = ""--Your WebHook
+--]]
 repeat wait() until game:IsLoaded()
 repeat wait() local a, b = pcall(function()
 if _G.Script_Mode == 1 then
+-------------------------------------------------------------
+if _G.HookFunction then
+wait()
+local ref_remote = Instance.new("RemoteEvent")
+
+local old
+old = hookfunction(ref_remote.FireServer, function(self, ...)
+    local args = {...}
+
+    if args[3] == "kick" then
+        return coroutine.yield()
+    end
+    return old(self, ...)
+end)
+
+local namecall
+namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod():lower()
+
+    if method == "kick" then
+        return coroutine.yield()
+    end
+    return namecall(self, ...)
+end)
+
+hookfunction(game.Players.LocalPlayer.Kick, function() end)
+wait()
+local function isAnti(func)
+    if func and islclosure(func) and not is_synapse_function(func) then
+        for index, value in next, debug.getconstants(func) do
+            if type(value) == "string" and value:find("Anti kick") then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+local old
+old = hookfunction(getrenv().coroutine.wrap, function(func, ...)
+    if isAnti(func) then
+        return function() end
+    end
+    return old(func, ...)
+end)
+
+for index, thread in next, getreg() do
+    if type(thread) == "thread" then
+        if isAnti(debug.info(thread, 1, "f")) then
+            task.cancel(thread)
+        end
+    end
+end
+
+local namecall
+namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod():lower()
+
+    if method == "kick" then
+        return coroutine.yield()
+    end
+    return namecall(self, ...)
+end)
+
+hookfunction(game.Players.LocalPlayer.Kick, function() end)
+end
+-----------------------------------------------------       
+                
     --------------------------------------------- 
                 if _G.Webhook then
-     game:GetService("RunService").RenderStepped:Connect(function()
+     game:GetService("RunService").Heartbeat:Connect(function()
       spawn(function()
       pcall(function()
   HttpService = game:GetService("HttpService")
@@ -54,7 +125,7 @@ if _G.Script_Mode == 1 then
   end) 
   end)
   
-  game:GetService("RunService").RenderStepped:Connect(function()
+  game:GetService("RunService").Heartbeat:Connect(function()
   spawn(function()   
       pcall(function()
   game:GetService("ReplicatedStorage").RemoteEventContainer.Rebirth:FireServer()
@@ -63,7 +134,7 @@ if _G.Script_Mode == 1 then
   end)
   
   spawn(function()
-  game:GetService("RunService").RenderStepped:Connect(function()
+  game:GetService("RunService").Heartbeat:Connect(function()
   pcall(function()
   game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Punch"))
   end)
@@ -71,7 +142,7 @@ if _G.Script_Mode == 1 then
   end)
   if _G.SynapseX then
   spawn(function()
-  game:GetService("RunService").RenderStepped:Connect(function()
+  game:GetService("RunService").Heartbeat:Connect(function()
       pcall(function()
   for i,v in pairs(game.Workspace:GetChildren()) do
   if v.Name == "Drop" then
@@ -84,114 +155,6 @@ if _G.Script_Mode == 1 then
   end)
 end
   elseif _G.Script_Mode == 2 then
-  local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-  local Window = Library.CreateLib("OverClock Hub", "Sentinel")
-  local Tab = Window:NewTab("Main")
-  local Section = Tab:NewSection("Auto Equip")
-  
-  local Weaponlist = {}
-  local Weapon = nil
-  
-  for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-      table.insert(Weaponlist,v.Name)
-  end
-  
-  Section:NewDropdown("select weapon", " ", Weaponlist, function(currentOption)
-      Weapon = currentOption
-  end)
-  
-  Section:NewToggle("Auto Equip", " ", function(a)
-  AutoEquiped = a
-  end)
-  Section:NewToggle("Bring Drop", " ", function(aa)
-  _G.Drop = aa
-  if _G.Drop then
-  while _G.Drop do wait(.1)
-      pcall(function()
-          spawn(function()
-  game:GetService("Workspace").Drop.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-  end)
-  end)
-  end    
-      else
-    print("Disble")      
-      end
-  end)
-  Section:NewToggle("Saft", " ", function(state)
-    if state then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(200000.9940185546875, 20965.58203125, 2660.19140625)
-        --noclip
-      spawn(function()
-      game:GetService("RunService").Heartbeat:Connect(function()
-          if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
-              setfflag("HumanoidParallelRemoveNoPhysics", "False")
-              setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
-          end
-      end)
-  end)
-  noclip = true
-  game:GetService('RunService').Stepped:connect(function()
-  if noclip then
-  game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-  end
-  end)
-  else
-        --noclip
-      spawn(function()
-      game:GetService("RunService").Heartbeat:Connect(function()
-          if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
-              setfflag("HumanoidParallelRemoveNoPhysics", "False")
-              setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
-          end
-      end)
-  end)
-  noclip = false
-  game:GetService('RunService').Stepped:connect(function()
-  if noclip then
-  game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-  end
-  end)
-  end   
-  end)
-  Section:NewToggle(" Auto Click", " ", function(state)
-      _G.Click = state
-      if state then
-     while _G.Click do wait(.5)     
-  spawn(function()
-      pcall(function()
-          game:GetService'VirtualUser':CaptureController()
-          game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-      end)
-  end) 
-  end
-          else
-  print("ggg")
-  end
-  end)
-  Section:NewToggle("Rebirth", " ", function(state)
-  _G.Rebirth = state
-    if state then
-  while _G.Rebirth do wait(1)
-  spawn(function()   
-      pcall(function()
-  game:GetService("ReplicatedStorage").RemoteEventContainer.Rebirth:FireServer()
-      end)
-  end)
-  
-  end
-  
-        else
-      print"jj"      
-  end
-  end)
-  spawn(function()
-  while wait() do
-  if AutoEquiped then
-  pcall(function()
-  game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-  end)
-  end
-  end
-  end)
+print("Wait Script Mode 2 not Finish")
   end
 end) if not a then wait(30) end until a
