@@ -3,8 +3,6 @@
 --_G.Webhook_URL = ""
 repeat wait() until game:IsLoaded()
 repeat wait() local a, b = pcall(function()
-rconsoleprint('@@RED@@')
-rconsoleprint('Map:Titan Simulator')
 if _G.Script_Mode == 1 then
     --------------------------------------------- 
      game:GetService("RunService").RenderStepped:Connect(function()
