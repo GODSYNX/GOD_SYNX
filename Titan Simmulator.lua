@@ -125,7 +125,7 @@ end
   end) 
   end)
   
-  game:GetService("RunService").Heartbeat:Connect(function()
+  game:GetService("RunService").RenderStepped:Connect(function()
   spawn(function()   
       pcall(function()
   game:GetService("ReplicatedStorage").RemoteEventContainer.Rebirth:FireServer()
@@ -134,7 +134,7 @@ end
   end)
   
   spawn(function()
-  game:GetService("RunService").Heartbeat:Connect(function()
+  game:GetService("RunService").RenderStepped:Connect(function()
   pcall(function()
   game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Punch"))
   end)
@@ -142,7 +142,7 @@ end
   end)
   if _G.SynapseX then
   spawn(function()
-  game:GetService("RunService").Heartbeat:Connect(function()
+  game:GetService("RunService").RenderStepped:Connect(function()
       pcall(function()
   for i,v in pairs(game.Workspace:GetChildren()) do
   if v.Name == "Drop" then
