@@ -1,7 +1,7 @@
 --[[
 _G.Script_Mode = 1 --1 is Auto farm 2 is UI
 _G.HookFunction = false -- Anti Kick Work 100%
-_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick50%
+_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
 _G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
 _G.Webhook_URL = ""--Your WebHook
 --]]
