@@ -19,7 +19,7 @@ if _G.Key == "UCFVYGECAFEPUYMZ" then
     KeyCkecked = true
 end
 if _G.Key == "TRIGONNOOB" then
-    Hwid = "" -- My Hwid TRIGON
+    Hwid = "F784E3B4-73E0-4B11-B658-72D453A8F0EE" -- My Hwid TRIGON
     KeyCkecked = true
 end
 if KeyCkecked == true then
