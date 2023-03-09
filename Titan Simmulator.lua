@@ -1,4 +1,5 @@
 --[[
+_G.Key = "" Buy for Use or Dm Discord Killer Fish Form Sandiego#8589
 _G.Script_Mode = 1 --1 is Titan Simulator 2 is ...
 _G.HookFunction = false -- Anti Kick Work 100% Errol 267 
 _G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
