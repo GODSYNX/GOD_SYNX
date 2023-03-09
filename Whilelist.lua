@@ -18,10 +18,6 @@ if _G.Key == "UCFVYGECAFEPUYMZ" then
     Hwid = "" --Hwid My JJsploit
     KeyCkecked = true
 end
-if _G.Key == "TRIGONNOOB" then
-    Hwid = "F784E3B4-73E0-4B11-B658-72D453A8F0EE" -- My Hwid TRIGON
-    KeyCkecked = true
-end
 if KeyCkecked == true then
     if HwidExec == Hwid then
         print("Script")
