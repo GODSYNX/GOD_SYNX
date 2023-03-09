@@ -22,15 +22,17 @@ if _G.Key == "UCFVYGECAFEPUYMZ" then
 end
 if KeyCkecked == true then
     if HwidExec == Hwid then
-        print("Script")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GODSYNX/GOD_SYNX/NO_HAVE_FILE/Titan%20Simmulator.lua"))()
+        print("Script")
     else
         game.Players.LocalPlayer:Kick("Incorrect Hwid")
+        print("Incorrect Hwid")
         wait(3)
         game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end
 else
     game.Players.LocalPlayer:Kick("Incorrect Key")
+    print("Incorrect Key")
     wait(3)
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end
