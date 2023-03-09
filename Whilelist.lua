@@ -1,3 +1,14 @@
+--[[
+_G.Key = "" -- Buy Key for Use or Dm Discord Killer Fish Form Sandiego#8589
+_G.AutoConfigEnb = false -- enabled = true disbled = false
+_G.AutoConfig = 1 -- if You Use Normal Exploit use 1 or you use Synapse X use 2
+_G.Script_Mode = 1 --1 is Titan Simulator 2 is ...
+_G.HookFunction = false -- Anti Kick Work 100% Errol 267 
+_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
+_G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
+_G.Webhook_URL = ""--Your WebHook
+--]]
+   if _G.AutoConfigEnb == true then
 if _G.AutoConfig == 1 then
 _G.Script_Mode = 1 --1 is Titan Simulator 2 is ...
 _G.HookFunction = false -- Anti Kick Work 100% Error 267 
@@ -12,6 +23,7 @@ _G.SynapseX = true -- if you Use SynapseX kick0% warning if you don't use Synaps
 _G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
 _G.Webhook_URL = ""--Your WebHook
 end
+    end
 local KeyCkecked = false
 local Hwid = nil
 local HwidExec = game:GetService("RbxAnalyticsService"):GetClientId()
