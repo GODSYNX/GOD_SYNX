@@ -8,22 +8,6 @@ _G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use Synap
 _G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
 _G.Webhook_URL = ""--Your WebHook
 --]]
-   if _G.AutoConfigEnb == true then
-if _G.AutoConfig == 1 then
-_G.Script_Mode = 1 --1 is Titan Simulator 2 is ...
-_G.HookFunction = false -- Anti Kick Work 100% Error 267 
-_G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
-_G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
-_G.Webhook_URL = ""--Your WebHook
-end
-if _G.AutoConfig == 2 then
-_G.Script_Mode = 1 --1 is Titan Simulator 2 is ...
-_G.HookFunction = true -- Anti Kick Work 100% Error 267 
-_G.SynapseX = true -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
-_G.Webhook = false -- warning so UltraFast ping to discord and Break100% your Exploit if you not SynapseX
-_G.Webhook_URL = ""--Your WebHook
-end
-    end
 local KeyCkecked = false
 local Hwid = nil
 local HwidExec = game:GetService("RbxAnalyticsService"):GetClientId()
