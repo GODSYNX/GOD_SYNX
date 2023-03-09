@@ -22,7 +22,7 @@ if _G.Key == "UCFVYGECAFEPUYMZ" then
 end
 if KeyCkecked == true then
     if HwidExec == Hwid then
-        print("Script")
+        print("Scripts")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GODSYNX/GOD_SYNX/NO_HAVE_FILE/Titan%20Simmulator.lua"))()
     else
         game.Players.LocalPlayer:Kick("Incorrect Hwid")
