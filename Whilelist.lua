@@ -1,7 +1,7 @@
 --[[
 _G.Key = "" -- Buy Key for Use or Dm Discord Killer Fish Form Sandiego#8589
 _G.AutoConfigEnb = false -- enabled = true disbled = false
-_G.AutoConfig = 1 -- if You Use Normal Exploit use 1 or you use Synapse X use 2
+_G.AutoConfig = 1 -- if You Use Normal Exploit type 1 or you use Synapse X Type 2
 _G.Script_Mode = 1 --1 is Titan Simulator 2 is Coming Soon
 _G.HookFunction = false -- Anti Kick Work 100% Errol 267 
 _G.SynapseX = false -- if you Use SynapseX kick0% warning if you don't use SynapseX kick30%
