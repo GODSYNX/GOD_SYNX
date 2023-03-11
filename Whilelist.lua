@@ -17,7 +17,7 @@ if _G.Key == "FPCQTWZJRVMEMKFF" then
     KeyCkecked = true
 end
 if _G.Key == "UCFVYGECAFEPUYMZ" then
-    Hwid = "" --Hwid My JJsploit
+    Hwid = "F784E3B4-73E0-4B11-B658-72D453A8F0EE" --Hwid My Trigon
     KeyCkecked = true
 end
 if KeyCkecked == true then
